@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import { Chip, Rating } from "@mui/material";
 import { CiLocationOn } from "react-icons/ci";
 import { BsTelephone } from "react-icons/bs";
-
+//starting chat bot
 export default function Places({ place }) {
   console.log(place);
   return (
