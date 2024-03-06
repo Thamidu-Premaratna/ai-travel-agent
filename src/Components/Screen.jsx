@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Autocomplete } from "@react-google-maps/api";
 import { Form } from "react-bootstrap";
+import Chatbot from "./Chatbot";
 
 import Card from "react-bootstrap/Card";
 import Maps from "./Map";
@@ -104,8 +105,8 @@ export default function Screen() {
               </div>
             </Card.Body>
           </Card>
-          <div className="mt-2 w-96 flex flex-row h-max">
-            <Card style={{ width: "48rem" }}>
+          <div className="mt-2 flex flex-row  gap-x-10">
+            <Card className=" w-96">
               <Card.Body>
                 <Card.Title>Restaurants Hotels & attractions</Card.Title>
                 <div>
@@ -113,6 +114,9 @@ export default function Screen() {
                 </div>
               </Card.Body>
             </Card>
+            <div class="fixed bottom-0 right-0 mb-4 mr-4">
+              <Chatbot />
+            </div>
           </div>
         </div>
       </div>

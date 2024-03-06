@@ -1,7 +1,5 @@
-import React, { useState } from "react";
 import GoogleMapReact from "google-map-react";
 import { FaLocationDot } from "react-icons/fa6";
-import { Paper, Typography, useMediaQuery } from "@material-ui/core";
 
 import Card from "react-bootstrap/Card";
 import { Rating } from "@mui/material";
