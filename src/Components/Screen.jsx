@@ -1,13 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Autocomplete } from "@react-google-maps/api";
 import { Form } from "react-bootstrap";
-import Chatbot from "./Chatbot";
 
 import Card from "react-bootstrap/Card";
 import Maps from "./Map";
 import Suggestion from "./Suggestion";
 
 import { getLocationInfo } from "./api/api";
+import DialogflowMessenger from "./Chatbot1";
 
 export default function Screen() {
   const [places, setPlaces] = useState();
@@ -115,7 +115,7 @@ export default function Screen() {
               </Card.Body>
             </Card>
             <div class="fixed bottom-0 right-0 mb-4 mr-4">
-              <Chatbot />
+              <DialogflowMessenger />
             </div>
           </div>
         </div>
