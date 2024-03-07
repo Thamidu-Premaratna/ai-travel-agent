@@ -7,6 +7,7 @@ import Maps from "./Map";
 import Suggestion from "./Suggestion";
 
 import { getLocationInfo } from "./api/api";
+import DialogflowMessenger from "./Chatbot1";
 
 export default function Screen() {
   const [places, setPlaces] = useState();
@@ -104,8 +105,8 @@ export default function Screen() {
               </div>
             </Card.Body>
           </Card>
-          <div className="mt-2 w-96 flex flex-row h-max">
-            <Card style={{ width: "48rem" }}>
+          <div className="mt-2 flex flex-row  gap-x-10">
+            <Card className=" w-96">
               <Card.Body>
                 <Card.Title>Restaurants Hotels & attractions</Card.Title>
                 <div>
@@ -113,6 +114,9 @@ export default function Screen() {
                 </div>
               </Card.Body>
             </Card>
+            <div class="fixed bottom-0 right-0 mb-4 mr-4">
+              <DialogflowMessenger />
+            </div>
           </div>
         </div>
       </div>
